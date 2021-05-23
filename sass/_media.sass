@@ -25,9 +25,14 @@
   .container
     max-width: 576px
     width: 92%
+  .logo
+    width: 132px
   .navbar
     &__search, &-menu, &__user
       display: none
+    &__top
+      padding-top: 24px
+      padding-bottom: 29px
   .menu
     &-button
       display: flex
@@ -65,3 +70,17 @@
 @media ( max-width: 576px )
   .logo
     width: 99px
+@media (min-width: 320px)
+  .container
+    max-width: 100%
+    width: 87%
+  .navbar
+    &-top
+      padding-top: 21px
+      padding-bottom: 21px
+  .hotel
+    padding-top: 8px
+  .breadcrumb
+    &-list
+      padding-top: 20px
+  

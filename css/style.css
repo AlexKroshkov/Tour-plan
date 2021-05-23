@@ -627,8 +627,15 @@ template {
     max-width: 576px;
     width: 92%;
   }
+  .logo {
+    width: 132px;
+  }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
+  }
+  .navbar__top {
+    padding-top: 24px;
+    padding-bottom: 29px;
   }
   .menu-button {
     display: -webkit-box;
@@ -690,6 +697,23 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+}
+
+@media (min-width: 320px) {
+  .container {
+    max-width: 100%;
+    width: 87%;
+  }
+  .navbar-top {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .hotel {
+    padding-top: 8px;
+  }
+  .breadcrumb-list {
+    padding-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
