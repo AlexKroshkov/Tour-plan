@@ -539,6 +539,7 @@ template {
 .hotel-name {
   font-size: 24px;
   line-height: 30px;
+  margin-top: 0px;
 }
 
 .hotel-wrapper {
@@ -555,11 +556,15 @@ template {
 .hotel-description {
   font-size: 12px;
   line-height: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  height: 8px;
+  margin-bottom: 4px;
 }
 
 .offer {
@@ -569,6 +574,7 @@ template {
   background-color: #EC1F46;
   color: #fff;
   border-radius: 3px;
+  margin-top: 0px;
 }
 
 .rating {
@@ -588,6 +594,10 @@ template {
 .rating__cointer {
   font-size: 14px;
   line-height: 18px;
+}
+
+.rating__cointer__number {
+  font-size: 11px;
 }
 
 @media (max-width: 1200px) {
@@ -703,7 +713,6 @@ template {
 
 @media (min-width: 320px) {
   .container {
-    max-width: 100%;
     width: 87%;
   }
   .navbar-top {
@@ -712,6 +721,9 @@ template {
   }
   .hotel {
     padding-top: 8px;
+  }
+  .hotel-wrapper {
+    margin-top: 0px;
   }
   .breadcrumb-list {
     padding-top: 20px;
