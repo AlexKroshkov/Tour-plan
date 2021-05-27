@@ -617,14 +617,12 @@ template {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .navbar__search {
+  .navbarsearch {
     margin-left: auto;
   }
   .navbar-menu {
     padding-top: 22px;
     padding-bottom: 22px;
-  }
-  .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
   }
@@ -638,23 +636,15 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .logo {
-    width: 132px;
-  }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
-  .navbar__top {
-    padding-top: 24px;
-    padding-bottom: 29px;
-  }
   .menu-button {
+    height: 11px;
+    width: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 16px;
-    height: 11px;
-    padding: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -665,9 +655,10 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
     border: none;
-    cursor: pointer;
     background-color: #fff;
+    cursor: pointer;
   }
   .menu-button__line {
     width: 16px;
@@ -692,7 +683,7 @@ template {
   }
   .hotel-info__name {
     margin-top: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .hotel-info__rating {
     display: none;
@@ -701,7 +692,7 @@ template {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 
@@ -711,22 +702,23 @@ template {
   }
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .container {
-    width: 87%;
+    width: 89%;
   }
   .navbar-top {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-  .hotel {
-    padding-top: 8px;
-  }
-  .hotel-wrapper {
-    margin-top: 0px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
   .breadcrumb-list {
-    padding-top: 20px;
+    text-shadow: none;
+  }
+  .hotel {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+  .hotel-info__description {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 /*# sourceMappingURL=style.css.map */
