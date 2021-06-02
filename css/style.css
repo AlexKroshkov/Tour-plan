@@ -610,6 +610,13 @@ template {
   z-index: 10;
 }
 
+.hotel-slider__images {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .hotel-slider__button {
   position: absolute;
   top: 50%;
@@ -827,6 +834,7 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .newsletter:before {
@@ -1227,9 +1235,17 @@ template {
   }
   .reviews-slider__bottom--next {
     right: 50%;
-    margin-right: -65px;
+    margin-right: -85px;
     -webkit-transform: translate(50% 0);
             transform: translate(50% 0);
+  }
+  .big-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
@@ -1258,6 +1274,28 @@ template {
   .subscribe {
     width: 100%;
   }
+  .reviews-title__text {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .reviews-slider__button {
+    position: absolute;
+    top: 13%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 99;
+    border: none;
+  }
+  .big-title {
+    padding-bottom: 42px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -1282,11 +1320,42 @@ template {
   .hotel-info__description {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-  .google-map {
+  .map {
     height: 173px;
   }
   .subscribe {
     max-width: 100%;
+  }
+  .newletter {
+    padding: 76px 0 83px 0;
+  }
+  .newletter-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .newletter__title {
+    margin-bottom: 37px;
+  }
+  .reviews {
+    padding-top: 40px;
+  }
+  .reviews-slider__text {
+    text-align: start;
+  }
+  .reviews-title {
+    width: 240px;
+    margin: auto;
+  }
+  .reviews-title__text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .ad {
+    padding-top: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */

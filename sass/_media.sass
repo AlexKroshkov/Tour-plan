@@ -117,8 +117,15 @@
           transform: translate(-50% 0)
         &--next
           right: 50%
-          margin-right: -65px
+          margin-right: -85px
           transform: translate(50% 0)
+  .big-title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    text-align: center
+    text-transform: uppercase
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -139,6 +146,27 @@
         margin-bottom: 37px
   .subscribe
     width: 100%
+  .reviews
+    &-title
+      &__text
+        font-size: 25px
+        line-height: 35px
+    &-slider
+      &__button
+        position: absolute
+        top: 13%
+        transform: translateY(-50%)
+        width: 30px
+        height: 30px
+        background-repeat: no-repeat
+        background-size: 10px
+        background-position: center
+        background-color: transparent
+        cursor: pointer
+        z-index: 99
+        border: none
+  .big-title
+    padding-bottom: 42px
 @media (min-width: 320px) and (max-width: 480px)
   .container,
   .newsletter-wrapper
@@ -158,7 +186,30 @@
     &-info
       &__description
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-  .google-map
+  .map
     height: 173px
   .subscribe
     max-width: 100%
+  .newletter
+    padding: 76px 0 83px 0
+    &-title
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-size: 30px
+        line-height: 38px
+    &__title
+      margin-bottom: 37px
+  .reviews
+    padding-top: 40px
+    &-slider
+      &__text
+        text-align: start
+    &-title
+      width: 240px
+      margin: auto
+      &__text
+        font-size: 18px
+        line-height: 23px
+  .ad
+    padding-top: 0px
