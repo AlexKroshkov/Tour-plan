@@ -8,6 +8,9 @@
         width: 100%
         height: 100%
         object-fit: cover
+  .card
+    width: 230px
+    height: 230px
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -46,6 +49,16 @@
     &-slider
       &__item
         max-width: 580px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .activities
+    padding-bottom: 70px
+  .card
+    width: 340px
+    height: 250px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -126,6 +139,12 @@
     line-height: 23px
     text-align: center
     text-transform: uppercase
+  .activities
+    margin-top: 40px
+    margin-bottom: 60px
+  .card
+    width: 49%
+    height: 255px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -167,6 +186,9 @@
         border: none
   .big-title
     padding-bottom: 42px
+  .card
+    width: 100%
+    object-fit: cover
 @media (min-width: 320px) and (max-width: 480px)
   .container,
   .newsletter-wrapper
@@ -186,8 +208,11 @@
     &-info
       &__description
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  .google-map
+    height: 173px
   .map
     height: 173px
+    margin-bottom: 40px
   .subscribe
     max-width: 100%
   .newletter
@@ -211,5 +236,3 @@
       &__text
         font-size: 18px
         line-height: 23px
-  .ad
-    padding-top: 0px
