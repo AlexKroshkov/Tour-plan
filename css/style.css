@@ -836,6 +836,7 @@ template {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  height: 260px;
 }
 
 .newsletter:before {
@@ -863,7 +864,6 @@ template {
           justify-content: space-between;
   max-width: 731px;
   margin: auto;
-  max-height: 260px;
 }
 
 .newsletter-title {
@@ -924,7 +924,7 @@ template {
 }
 
 .reviews {
-  padding: 0px 0 70px 0;
+  padding: 40px 0px 0px 0px;
 }
 
 .reviews-slider__item {
@@ -1062,6 +1062,7 @@ template {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
+  margin-top: 0px;
 }
 
 .activities {
@@ -1177,6 +1178,9 @@ template {
   .container,
   .newsletter-wrapper {
     max-width: 700px;
+  }
+  .newsletter {
+    padding: 92px 0 93px 0;
   }
   .logo {
     width: 132px;
@@ -1346,6 +1350,10 @@ template {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .newsletter__title {
+    margin-bottom: 20px;
+    margin-top: -39px;
+  }
   .reviews-slider__button {
     top: 30px;
   }
@@ -1394,15 +1402,6 @@ template {
   }
   .hotel-info {
     padding-bottom: 38px;
-  }
-  .newsletter {
-    padding: 76px 0 83px 0;
-  }
-  .newsletter .newsletter__title {
-    margin-bottom: 37px;
-  }
-  .subscribe {
-    width: 100%;
   }
   .reviews-title__text {
     font-size: 25px;
@@ -1466,19 +1465,24 @@ template {
   .subscribe {
     max-width: 100%;
   }
-  .newletter {
+  .newsletter {
     padding: 76px 0 83px 0;
+    height: 319px;
   }
-  .newletter-title {
+  .newsletter-title {
     font-size: 20px;
     line-height: 25px;
   }
-  .newletter-title__strong {
+  .newsletter-title__strong {
     font-size: 30px;
     line-height: 38px;
   }
-  .newletter__title {
+  .newsletter__title {
     margin-bottom: 37px;
+    margin-top: -3px;
+  }
+  .subscribe {
+    width: 100%;
   }
   .reviews {
     padding-top: 40px;
