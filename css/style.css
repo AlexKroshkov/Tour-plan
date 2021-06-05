@@ -1025,6 +1025,7 @@ template {
   line-height: 15px;
   color: #EC1F46;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .reviews-slider__date {
@@ -1406,7 +1407,7 @@ template {
   }
   .reviews-slider__button {
     position: absolute;
-    top: 13%;
+    top: 8%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     width: 30px;
