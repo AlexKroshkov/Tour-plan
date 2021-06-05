@@ -836,7 +836,6 @@ template {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 260px;
 }
 
 .newsletter:before {
@@ -879,6 +878,8 @@ template {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .newsletter-title__strong {
@@ -1353,7 +1354,6 @@ template {
   }
   .newsletter__title {
     margin-bottom: 20px;
-    margin-top: -39px;
   }
   .reviews-slider__button {
     top: 30px;
@@ -1476,7 +1476,6 @@ template {
   }
   .newsletter__title {
     margin-bottom: 37px;
-    margin-top: -3px;
   }
   .subscribe {
     width: 100%;
