@@ -47,8 +47,18 @@
     width: 340px
   .reviews
     &-slider
+      &__button
+        top: 156px
+        &--prev
+          left: 0
+        &--next
+          right: 0
       &__item
         max-width: 580px
+  .big-title
+    margin-bottom: 50px
+    font-size: 30px
+    line-height: 38px
   .activities
     &-wrapper
       flex-wrap: wrap
@@ -118,20 +128,16 @@
       align-items: flex-start
   .reviews
     &-slider
+      &__button
+        top: 30px
+        &--prev
+          left: 30px
+        &--next
+          right: 30px
       &__item
         padding: 0 30px 30px
-        &:after,&:before
+        &::after, &::before
           display: none
-      &__bottom
-        top: 32px
-        &--prev
-          left: 50%
-          margin-left: -65px
-          transform: translate(-50% 0)
-        &--next
-          right: 50%
-          margin-right: -85px
-          transform: translate(50% 0)
   .big-title
     font-style: normal
     font-weight: bold
@@ -170,6 +176,7 @@
       &__text
         font-size: 25px
         line-height: 35px
+        margin-bottom: 42px
     &-slider
       &__button
         position: absolute
@@ -230,9 +237,8 @@
     &-slider
       &__text
         text-align: start
-    &-title
-      width: 240px
-      margin: auto
-      &__text
-        font-size: 18px
-        line-height: 23px
+  .big-title
+    font-size: 18px
+    line-height: 23px
+    width: 240px
+    margin: auto
