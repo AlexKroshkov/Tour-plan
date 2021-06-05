@@ -831,7 +831,6 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  max-height: 260px;
   background-image: url(../images/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1144,7 +1143,7 @@ template {
 .card__button {
   font-family: Nunito, sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   color: #fff;
@@ -1492,6 +1491,16 @@ template {
     line-height: 23px;
     width: 240px;
     margin: auto;
+  }
+  .activities__card__order-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .activities__card__order-4 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 /*# sourceMappingURL=style.css.map */
