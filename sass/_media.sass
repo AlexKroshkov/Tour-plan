@@ -11,6 +11,14 @@
   .card
     width: 230px
     height: 230px
+
+  .packages
+    &-card-open
+      &__descriprion
+        margin-bottom: 37px
+      &__line::nth-child(4)
+        margin-bottom: 20px
+
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -71,6 +79,10 @@
   .card
     width: 340px
     height: 250px
+
+  .packages
+    &-wrapper
+      grid-template-columns: 1fr 1fr
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -152,6 +164,102 @@
   .card
     width: 49%
     height: 255px
+
+  .packages
+    &-wrapper
+      grid-template-columns: 1fr 1fr
+      column-gap: 20px
+
+    &-card-open
+      grid-template-rows: 1fr 1fr
+      grid-template-columns: 1fr
+      &::before
+        font-weight: 600
+        font-size: 8px
+        line-height: 10px
+        padding: 4px 9px 4px 9px
+
+      &__image
+        max-width: 100%
+        max-height: 100%
+        object-fit: cover
+        justify-self: center
+        align-self: center
+
+      &__text-block
+        background: #0a223d
+        padding: 30px 21px 25px 32px
+        display: grid
+        grid-template-columns: 2fr 3fr
+        justify-content: space-between
+        grid-auto-rows: min-content
+
+      &__title,
+      &__descriprion,
+      &__line,
+      &__crossed-price
+        grid-column-start: 1
+        grid-column-end: span 2
+        margin: 0
+
+      &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        margin-bottom: 22px
+
+      &__descriprion
+        display: none
+
+      &__line
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        font-style: normal
+        margin-bottom: 8px
+        &:nth-child(6)
+          margin-bottom: 24px
+
+      &__icon
+        width: 14px
+        height: 14px
+
+      &__text
+        margin-left: 11px
+
+      &__crossed-price
+        font-weight: normal
+        font-size: 14px
+        line-height: 18px
+        text-decoration-line: line-through
+
+      &__price
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 26px
+        align-self: center
+        margin-left: 0
+
+      &__button
+        justify-self: end
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+        padding: 10px 26px
+
+    &-card-closed
+      &__price
+        font-size: 20px
+        line-height: 26px
+
+      &__text-block
+        grid-template-columns: 2fr 3fr
+
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -190,6 +298,13 @@
   .card
     width: 100%
     object-fit: cover
+
+  .packages
+    &-wrapper
+      grid-template-columns: 1fr
+      column-gap: 0px
+
+      column-gap: 20px
 @media (min-width: 320px) and (max-width: 480px)
   .container,
   .newsletter-wrapper
@@ -248,8 +363,32 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 36px
-    &__card
-      &__order-1
-        order: 1
-      &__order-4
-        order: 2
+    .packages
+    &-grid
+      &__img
+        height: 200px
+    &:nth-child(2)
+      order: 2
+    &:nth-child(3)
+      order: 1
+    &:nth-child(4)
+      order: 3
+  .packages
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-gap: 15px
+    &-card-open
+      flex-direction: column
+      grid-row-start: 1
+      grid-column-start: 1
+      grid-row-end: 2
+      grid-column-end: 2
+      color: $light
+      &__image
+        width: 100%
+        height: 200px
+        object-fit: cover
+
+    &-card-closed
+      &__image
+        height: 200px
