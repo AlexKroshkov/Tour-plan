@@ -155,8 +155,8 @@
   body
     padding-top: 78px
   .navbar
-    &__mobile
-      &--fixed
+    &_mobile
+      &_fixed
         position: fixed
         left: 0
         right: 0
@@ -181,8 +181,7 @@
       padding-top: 30px
       &--visible
         display: block
-        
-        
+
     &-menu
       flex-direction: column
       &__item
@@ -208,11 +207,10 @@
         background-color: $text-color
   .user
     &__name
-      &--mobile
-        &--visible
-          color: $light
-          margin-left: 0
-          margin-top: 10px
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
   .stars
     flex-basis: auto
   .hotel
@@ -366,15 +364,14 @@
 
       &__text-block
         grid-template-columns: 2fr 3fr
-    
+
   .footer
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
-    
+
     &__legal
       grid-column: span 2
       margin-left: 38px
-
 
 @media (max-width: 576px)
   .logo
@@ -529,7 +526,7 @@
     &__wrapper
       margin-top: 30px
       flex-wrap: wrap
-    
+
     &__button
       margin-top: 0
       width: 160px
