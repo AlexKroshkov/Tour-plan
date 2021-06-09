@@ -479,7 +479,7 @@ template {
      object-fit: cover;
 }
 
-.user__name {
+.user-name {
   margin-left: 18px;
   font-size: 14px;
   line-height: 18px;
