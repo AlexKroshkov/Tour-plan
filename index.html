@@ -17,7 +17,7 @@
   <body>
     <!-- HEADER START -->
 
-    <header class="navbar">
+    <header class="navbar navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -28,7 +28,7 @@
             />
           </a>
 
-          <form action="#" class="search navbar__search">
+          <form action="#" class="search navbar__search navbar__search--mobile--hidden">
             <input
               type="text"
               class="search__input"
@@ -39,7 +39,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img
               src="images/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -60,6 +60,29 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <a href="#" class="user navbar__user navbar__user--mobile--visible">
+                <img
+                  src="images/user-avatar.jpg"
+                  alt="Avatar: Nathan"
+                  class="user-avatar"
+                />
+                <span class="user-name user__name--mobile--visible">Nathan</span>
+              </a>
+              <!-- /.user --> 
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <form action="#" class="search navbar__search navbar__search--mobile--visible">
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search-button">
+                  <img src="images/search.svg" alt="Icon: search" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item" data-aos="zoom-in-right" data-aos-delay="100" >
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
@@ -78,7 +101,7 @@
             <li class="navbar-menu__item" data-aos="zoom-in-right" data-aos-delay="600">
               <a href="#" class="navbar-menu__link">Events</a>
             </li>
-            <li class="navbar-menu__item" data-aos="zoom-in-right" data-aos-delay="700">
+            <li class="navbar-menu__item" data-aos="zoom-in-right" data-aos-delay="600">
               <a href="#" class="navbar-menu__link">Rodrigues</a>
             </li>
           </ul>
