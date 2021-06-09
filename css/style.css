@@ -417,6 +417,10 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu__item:hover {
+  color: #EC1F46;
+}
+
 .logo {
   width: 177px;
 }
@@ -813,6 +817,12 @@ template {
   color: #fff;
   border: none;
   cursor: pointer;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.booking__button:hover {
+  background-color: #044c64;
 }
 
 .map {
@@ -985,6 +995,11 @@ template {
   background-color: #EC1F46;
   border: none;
   color: #fff;
+  cursor: pointer;
+}
+
+.packages-card-open__button:hover {
+  background-color: #044c64;
 }
 
 .packages-card-closed {
@@ -1108,6 +1123,11 @@ template {
   background-color: #EC1F46;
   border: none;
   color: #fff;
+  cursor: pointer;
+}
+
+.packages-card-closed__button:hover {
+  background-color: #044c64;
 }
 
 .newsletter {
@@ -1204,6 +1224,11 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
+}
+
+.newsletter .subscribe-button:hover {
+  background-color: #044c64;
 }
 
 .reviews {
@@ -1439,6 +1464,10 @@ template {
   cursor: pointer;
 }
 
+.card__button:hover {
+  background-color: #044c64;
+}
+
 .footer {
   padding-top: 108px;
   padding-bottom: 46px;
@@ -1609,6 +1638,10 @@ template {
   color: inherit;
 }
 
+.footer__link:hover {
+  color: #EC1F46;
+}
+
 .footer__span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1664,6 +1697,10 @@ template {
   line-height: 15px;
   color: #ffffff;
   background-color: #EC1F46;
+}
+
+.footer__button:hover {
+  background-color: #044c64;
 }
 
 .footer__info {
