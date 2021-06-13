@@ -90,64 +90,54 @@
 
   .footer
     padding-top: 73px
-
-    &__form
-      max-width: 549px
-
-    &__wrapper
-      grid-template-columns: repeat(6, 1fr)
-
+    &-wrapper
+      grid-template-columns: repeat(3, minmax(min-content, 1fr))
+      grid-template-rows: repeat(4, minmax(100px, min-content))
+      grid-row-gap: 50px
     &__logo
-      margin-top: 0
+      width: 97px
       grid-row: 1 / 2
-      grid-column: 1
-      max-width: 104px
-      max-height: 120px
-
-    &__input
-      flex-basis: 48%
-
-    &__social-network
-      grid-row: 1 / 2
-      grid-column: span 5
-      align-items: flex-end
-      margin-top: 20px
-      margin-left: 35px
-
+      grid-column: 1 / 2
     &__categories
-      margin-left: 0
-      grid-row: 2/3
-      grid-column: span 2
-
-    &__categories-details
-      grid-column: span 5
-      grid-row: 3
-
-    &__contacts-form
-      grid-column: span 5
-      grid-row: 4
-      margin-left: 0
-
-    &__title
-      margin-top: 30px
-
-    &__title--inline
-      row-gap: 50px
-
-    &__legal
-      max-width: 202px
-      margin-left: 20px
-      grid-column: span 2
-
+      min-width: 162px
+      grid-row: 2 / 3
+      grid-column: 1 / 2
     &__additional
-      margin-left: -38px
-      grid-column: span 2
-
-    &__list
-      grid-row-gap: 38px
-
-    &__contacts-input
-      max-width: 539px
+      min-width: 300px
+      grid-row: 2 / 3
+      grid-column: 2 / 3
+    &__legal
+      min-width: 202px
+      grid-row: 2 / 3
+      grid-column: 3 / 4
+    &__social
+      &-network
+        align-self: center
+        grid-row: 1 / 2
+        grid-column: 1 / 4
+        margin-left: 184px
+    &__contact
+      &-details
+        padding-top: 14px
+        grid-row: 3 / 4
+        grid-column: 1 / 4
+      &-form
+        padding-top: 0
+        grid-row: 4 / 5
+        grid-column: 1 / 4
+    &__item
+      &--mb-2
+        &:nth-child(3)
+          margin-bottom: 0
+    &__form
+      width: 77%
+    &__input
+      flex-basis: 47%
+    &__condition
+      justify-content: space-between
+      margin-top: 56px
+      &-links
+        margin-right: 0
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -366,12 +356,11 @@
         grid-template-columns: 2fr 3fr
 
   .footer
-    &-wrapper
-      grid-template-columns: repeat(6, 1fr)
-
-    &__legal
-      grid-column: span 2
-      margin-left: 38px
+    &__categories, &__additional, &__legal
+      min-width: auto
+    &__title
+      &--inline
+        margin-bottom: 20px
 
 @media (max-width: 576px)
   .logo
@@ -438,99 +427,90 @@
         height: 200px
 
   .footer
-    &__input
-      min-width: 281px
-      flex-basis: 90%
-
-    &__message
-      min-width: 281px
-      flex-basis: 90%
-
     &-wrapper
       grid-template-columns: 1fr
-
+      grid-gap: 30px
     &__logo
-      margin-bottom: 15px
       grid-row: 1
       grid-column: 1
-
-    &__social-network
-      margin: 0 100px 0 0
-      display: flex
-      flex-wrap: wrap
-      grid-row: 2
-      grid-column: 1
-
-    &__social-links
-      margin-top: -20px
-
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
     &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
       grid-row: 4
       grid-column: 1
-      margin-left: 0
-      margin-bottom: 10px
-
-    &__categories
+    &__legal
       grid-row: 5
       grid-column: 1
-      margin-bottom: 25px
-
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &__input
+      flex-basis: 100%
+  .footer
+    padding-top: 69px
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(7, minmax(67px, min-content))
+      grid-gap: 30px
+    &__logo
+      grid-row: 1 / 2
+      grid-column: 1 / 2
+    &__categories
+      grid-row: 5 / 6
+      grid-column: 1 / 2
+    &__additional
+      grid-row: 4 / 5
+      grid-column: 1 / 2
     &__legal
-      grid-row: 3
-      grid-column: 1px
-      margin-left: 0
-      margin-bottom: 10px
+      position: unset
+      grid-row: 3 / 4
+      grid-column: 1 / 2
+    &__social
+      &-network
+        flex-direction: column
+        align-items: flex-start
+        align-self: center
+        margin-left: 0
+        grid-row: 2 / 3
+        grid-column: 1 / 2
 
-    &__contacts-details
-      grid-row: 6
-      grid-column: 1px
-      margin-bottom: 15px
-
-    &__contacts-form
-      grid-row: 7
-      grid-column: 1
-      width: 281px
-
-    &__title--input
-      margin-bottom: 15px
-      margin-top: 20px
-
-    &__title--inline
-      margin: 0 10px 0 0
-
+    &__contact
+      &-details
+        grid-row: 6 / 7
+        grid-column: 1 / 2
+      &-form
+        padding-top: 32px
+        flex-basis: 100%
+        grid-row: 7 / 8
+        grid-column: 1 / 2
+    &__item
+      &--mb-2
+        &:nth-child(3)
+          margin-bottom: 0
+    &__form
+      width: 100%
     &__title
-      margin-top: 0
-
-    &__info
-      display: flex
-      flex-direction: column
-      margin-top: 10px
+      &--inline
+        margin-bottom: 20px
+      &--mb-3
+        margin-bottom: 25px
+    &__textarea
       margin-bottom: 15px
-      margin-right: -30px
-      order: -1
-
-    &__span
-      width: 300px
-
-    &__cards
-      font-size: 10px
-      margin-right: 10px
-      justify-content: space-between
-      margin-bottom: 10px
-
-    &__contacts-input
-      display: flex
-      flex-direction: column
-      margin-top: 20px
-  .cards
-    &__wrapper
-      margin-top: 30px
+    &__condition
       flex-wrap: wrap
-
-    &__button
-      margin-top: 0
-      width: 160px
-      order: 1
+      margin-top: 30px
+      &-link
+        margin-right: 3px
+        font-size: 11px
 
 @media (min-width: 320px) and (max-width: 480px)
   .container,
@@ -590,3 +570,25 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 36px
+  
+  .footer
+    &__social
+      &-network
+        flex-direction: column
+    &__title
+      &--inline
+        margin-bottom: 20px
+    &__icon
+      &-wrapper
+        min-width: 31px
+    &__info
+      flex-basis: 100%
+      margin-bottom: 15px
+    &__button
+      order: 1
+    &__condition
+      flex-wrap: wrap
+      &-links
+        margin-bottom: 10px
+      &-link
+        margin-right: 5px
