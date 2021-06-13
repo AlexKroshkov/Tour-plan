@@ -1732,7 +1732,7 @@ template {
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 15px;
   color: #BDBDBD;
 }
@@ -2595,6 +2595,10 @@ template {
   }
   .footer__condition-link {
     margin-right: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
