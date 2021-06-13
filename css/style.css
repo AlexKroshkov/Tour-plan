@@ -1968,6 +1968,9 @@ template {
     top: 0;
     z-index: 99;
   }
+  .navbar__search--mobile--visible {
+    width: 245px;
+  }
   .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
   }
@@ -1991,8 +1994,9 @@ template {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 78px;
-    padding-top: 30px;
+    top: 70px;
+    max-height: 472px;
+    overflow: scroll;
   }
   .navbar-bottom--visible {
     display: block;
@@ -2008,6 +2012,7 @@ template {
   }
   .navbar-menu__item--mobile--visible {
     display: block;
+    margin-bottom: 27px;
   }
   .menu-button {
     height: 11px;

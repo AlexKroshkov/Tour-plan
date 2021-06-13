@@ -152,6 +152,11 @@
         right: 0
         top: 0
         z-index: 99
+    &__search
+      &--mobile
+        &--visible
+          width: 245px
+
     &__user, &__search
       &--mobile
         &--hidden
@@ -167,8 +172,9 @@
       left: 0
       right: 0
       bottom: 0
-      top: 78px
-      padding-top: 30px
+      top: 70px
+      max-height: 472px
+      overflow: scroll
       &--visible
         display: block
 
@@ -179,6 +185,7 @@
         &--mobile
           &--visible
             display: block
+            margin-bottom: 27px
   .menu
     &-button
       height: 11px
@@ -570,7 +577,7 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 36px
-  
+
   .footer
     &__social
       &-network
