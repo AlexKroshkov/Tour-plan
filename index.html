@@ -28,7 +28,10 @@
             />
           </a>
 
-          <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile--hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -45,7 +48,7 @@
               alt="Avatar: Nathan"
               class="user-avatar"
             />
-            <span class="user-name ">Nathan</span>
+            <span class="user-name">Nathan</span>
           </a>
           <!-- /.user -->
           <button class="menu-button navbar-top__menu-button">
@@ -61,7 +64,10 @@
         <div class="container">
           <ul class="navbar-menu">
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-              <a href="#" class="user navbar__user navbar__user--mobile--visible">
+              <a
+                href="#"
+                class="user navbar__user navbar__user--mobile--visible"
+              >
                 <img
                   src="images/user-avatar.jpg"
                   alt="Avatar: Nathan"
@@ -69,10 +75,13 @@
                 />
                 <span class="user__name user__name--light">Nathan</span>
               </a>
-              <!-- /.user --> 
+              <!-- /.user -->
             </li>
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-              <form action="#" class="search navbar__search navbar__search--mobile--visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search--mobile--visible"
+              >
                 <input
                   type="text"
                   class="search__input"
@@ -83,7 +92,7 @@
                 </button>
               </form>
             </li>
-            <li class="navbar-menu__item navbar-menu__item--margin " >
+            <li class="navbar-menu__item navbar-menu__item--margin">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
             <li class="navbar-menu__item navbar-menu__item--margin">
@@ -548,11 +557,12 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsletter__search">
+        <form action="send.php" method="POST" class="subscribe newsletter__search">
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
           />
           <button class="subscribe-button">Send</button>
         </form>
@@ -736,108 +746,216 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="#" class="footer__logo"><img src="images/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo"></a>
+          <a href="#" class="footer__logo"
+            ><img
+              src="images/vertical-logo.svg"
+              alt="Logo: Best Tour Plan"
+              class="logo footer__logo"
+          /></a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">All categories</h3>
             <ul class="footer__ul">
-              <li class="footer__item"><a href="#" class="footer__link">All Deals</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Hotels</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Activities</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Spa Packages</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Hotel Day Packages</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Restaurants</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Fitness</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Rodrigues</a></li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">All Deals</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Hotels</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Activities</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Spa Packages</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Hotel Day Packages</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Restaurants</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Fitness</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Rodrigues</a>
+              </li>
             </ul>
           </div>
           <!-- /.footer__list -->
-  
+
           <div class="footer__list footer__additional">
             <h3 class="footer__title">Additional information</h3>
             <ul class="footer__ul">
-              <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">How does it work?</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Frequently Asked Questions</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Deals.mu loyalty program</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Promote your Business on BTP</a></li>            
+              <li class="footer__item">
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">How does it work?</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Frequently Asked Questions</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Deals.mu loyalty program</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link"
+                  >Promote your Business on BTP</a
+                >
+              </li>
             </ul>
-          </div> <!-- /.footer__list -->
-  
+          </div>
+          <!-- /.footer__list -->
+
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="https://www.facebook.com/TourRadar/?eid=ARDM8IMGp51gdGJGLFdIlrWFpDI1Z8h0rIuro3GTFvLVHsa4AkXYx1l6PCkiOtQjO5wnpBajxbczpyUx"
-                 target="_blank" 
-                 class="footer__link"><img src="images/fb.svg" alt="icon: facebook"></a>
-              <a href="https://www.youtube.com/watch?v=Tlt-GF3SVsw&ab_channel=Homedit" target="_blank" class="footer__link"><img src="images/yt.svg" alt="icon: youtube"></a>
-              <a href="https://www.instagram.com/bestattraveluk/" target="_blank" class="footer__link"><img src="images/inst.svg" alt="icon: instagram"></a>
+              <a
+                href="https://www.facebook.com/TourRadar/?eid=ARDM8IMGp51gdGJGLFdIlrWFpDI1Z8h0rIuro3GTFvLVHsa4AkXYx1l6PCkiOtQjO5wnpBajxbczpyUx"
+                target="_blank"
+                class="footer__link"
+                ><img src="images/fb.svg" alt="icon: facebook"
+              /></a>
+              <a
+                href="https://www.youtube.com/watch?v=Tlt-GF3SVsw&ab_channel=Homedit"
+                target="_blank"
+                class="footer__link"
+                ><img src="images/yt.svg" alt="icon: youtube"
+              /></a>
+              <a
+                href="https://www.instagram.com/bestattraveluk/"
+                target="_blank"
+                class="footer__link"
+                ><img src="images/inst.svg" alt="icon: instagram"
+              /></a>
             </div>
-          </div> <!-- /.footer__social-network -->
-  
+          </div>
+          <!-- /.footer__social-network -->
+
           <div class="footer__list footer__legal">
             <h3 class="footer__title">Legal information</h3>
             <ul class="footer__ul">
-              <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Disclaimer</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Cancellation policy</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>            
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms & Conditions</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Disclaimer</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Cancellation policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy</a>
+              </li>
             </ul>
-          </div> <!-- /.footer__list -->
-  
+          </div>
+          <!-- /.footer__list -->
+
           <div class="footer__contact-details">
             <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
-            <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
+            <p class="footer__text">
+              Feel free to contact us by phone, email or by our contact form
+            </p>
             <ul class="footer__ul">
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img src="images/map-marker.svg" alt="icon: map market" class="footer__icon">
+                  <img
+                    src="images/map-marker.svg"
+                    alt="icon: map market"
+                    class="footer__icon"
+                  />
                 </div>
-                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+                9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                States
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img src="images/phone.svg" alt="icon: phone call" class="footer__icon">
-                </div>                 
+                  <img
+                    src="images/phone.svg"
+                    alt="icon: phone call"
+                    class="footer__icon"
+                  />
+                </div>
                 <div class="footer__link-wrapper">
-                  Tel (business hours) : <a href="callto:269-1500" class="footer__tel-link">269 1500</a><br>
-                  Tel (hotline) Monday - Saturday: <a href="callto:52-56-61-38" class="footer__tel-link">52-56-61-38</a> (08:00 am – 20:00 pm)<br>
-                  Tel (hotline) Sunday: <a href="callto:52-56-61-38" class="footer__tel-link">52-56-61-38</a> (08:00 am – 14:00 pm)
+                  Tel (business hours) :
+                  <a href="callto:269-1500" class="footer__tel-link">269 1500</a
+                  ><br />
+                  Tel (hotline) Monday - Saturday:
+                  <a href="callto:52-56-61-38" class="footer__tel-link"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 20:00 pm)<br />
+                  Tel (hotline) Sunday:
+                  <a href="callto:52-56-61-38" class="footer__tel-link"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 14:00 pm)
                 </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img src="images/mail.svg" alt="icon: email" class="footer__icon">
+                  <img
+                    src="images/mail.svg"
+                    alt="icon: email"
+                    class="footer__icon"
+                  />
                 </div>
-                <a href="mailto:cherly.lawson@example.com" class="footer__email-link">cherly.lawson@example.com</a>
+                <a
+                  href="mailto:cherly.lawson@example.com"
+                  class="footer__email-link"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
-          </div> <!-- /.footer__contact-details -->
-  
+          </div>
+          <!-- /.footer__contact-details -->
+
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a massage</h3>
-            <form action="#" class="footer__form">
-              <input type="text" class="footer__input footer__placeholder" placeholder="Your Full Name*">
-              <input type="text" class="footer__input footer__placeholder" placeholder="Phone Number*">
-              <textarea cols="30" rows="10" class="footer__textarea footer__placeholder" placeholder="Message"></textarea>
+            <form action="send.php" method="POST" class="footer__form">
+              <input
+                type="text"
+                class="footer__input footer__placeholder"
+                placeholder="Your Full Name*"
+                name="name"
+              />
+              <input
+                type="text"
+                class="footer__input footer__placeholder"
+                placeholder="Phone Number*"
+                name="phone"
+              />
+              <textarea
+                cols="30"
+                rows="10"
+                class="footer__textarea footer__placeholder"
+                placeholder="Message"
+                name="message"
+              ></textarea>
               <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
-          </div> <!-- /.footer__contact-form -->        
-  
-        </div> <!-- /.footer-wrapper -->
-  
-        <div class="footer__condition"> 
+          </div>
+          <!-- /.footer__contact-form -->
+        </div>
+        <!-- /.footer-wrapper -->
+
+        <div class="footer__condition">
           <div class="footer__condition-links">
             <a href="#" class="footer__condition-link">Disclaimer</a>
             <a href="#" class="footer__condition-link">Conditions of use</a>
             <a href="#" class="footer__condition-link">Cancellation policy</a>
-          </div>                      
-          <img src="images/cards.jpg" alt="Paycards" class="footer__condition-paycard">
+          </div>
+          <img
+            src="images/cards.jpg"
+            alt="Paycards"
+            class="footer__condition-paycard"
+          />
         </div>
-  
       </div>
-  
     </footer>
 
     <script src="js/swiper-bundle.min.js"></script>
