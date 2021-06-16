@@ -1909,36 +1909,6 @@ template {
   text-decoration: none;
 }
 
-.subscribe-wrapper {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.subscribe__title {
-  margin-top: 0;
-  margin-bottom: 15px;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.subscribe__link {
-  display: inline-block;
-  max-width: 200px;
-  padding: 13px 20px;
-  margin-right: 0;
-  margin-bottom: 30px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-  color: #fff;
-  background-color: #EC1F46;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-}
-
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
