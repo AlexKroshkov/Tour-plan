@@ -53,4 +53,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('location: subscribe.html');
+header('location: subscription.html');

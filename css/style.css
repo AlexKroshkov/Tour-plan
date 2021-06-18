@@ -1849,6 +1849,10 @@ template {
   width: 100%;
   min-height: 123px;
   margin-bottom: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal__info {
@@ -2665,7 +2669,6 @@ template {
 
 .modal__dialog {
   width: calc(100% - 30px);
-  padding: 20px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
