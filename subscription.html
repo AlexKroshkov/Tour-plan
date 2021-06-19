@@ -329,12 +329,14 @@
                 class="footer__input footer__placeholder"
                 placeholder="Your Full Name*"
                 name="name"
+                required minlength="2"
               />
               <input
-                type="text"
-                class="footer__input footer__placeholder"
+                type="tel"
+                class="footer__input footer__placeholder phone"
                 placeholder="Phone Number*"
                 name="phone"
+                required minlength="11"
               />
               <textarea
                 cols="30"
@@ -366,6 +368,9 @@
       </div>
     </footer>
 
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
