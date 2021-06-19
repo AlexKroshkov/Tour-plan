@@ -324,29 +324,36 @@
 
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a massage</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-line">
+                <input
                 type="text"
                 class="footer__input footer__placeholder"
                 placeholder="Your Full Name*"
                 name="name"
                 required minlength="2"
               />
-              <input
+              </div>
+              
+              <div class="footer__input-line">
+                <input
                 type="tel"
                 class="footer__input footer__placeholder phone"
                 placeholder="Phone Number*"
                 name="phone"
-                required minlength="11"
+                required minlength="18"
               />
+              </div>
+              
               <textarea
+              type="text"
                 cols="30"
                 rows="10"
                 class="message footer__message footer__placeholder"
                 placeholder="Message"
                 name="message"
               ></textarea>
-              <button class="button footer__button">Send</button>
+              <button type="submit" class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
