@@ -558,8 +558,12 @@
     </section>
     <!-- /.packages -->
 
-    <section class="newsletter parallax-window" data-parallax="scroll" data-speed="0.2"
-    data-image-src="images/newsletter-bg.jpg">
+    <section
+      class="newsletter parallax-window"
+      data-parallax="scroll"
+      data-speed="0.2"
+      data-image-src="images/newsletter-bg.jpg"
+    >
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
@@ -570,12 +574,18 @@
           method="POST"
           class="subscribe newsletter__search form"
         >
-        <div class="subscribe__wrapper">
-          <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
-        </div>
-        <div class="subscribe__wrapper-button">
-          <button class="subscribe__button">Send</button>
-        </div>
+          <div class="subscribe__wrapper">
+            <input
+              type="email"
+              class="subscribe__input"
+              placeholder="Your email address"
+              name="email"
+              required
+            />
+          </div>
+          <div class="subscribe__wrapper-button">
+            <button class="subscribe__button">Send</button>
+          </div>
         </form>
       </div>
       <!-- /.newsletter-wrapper -->
@@ -927,35 +937,35 @@
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a massage</h3>
             <form action="send.php" method="POST" class="footer__form form">
-              <div class="footer__input-line">
+              <div class="footer__form-line">
                 <input
-                type="text"
-                class="footer__input footer__placeholder"
-                placeholder="Your Full Name*"
-                name="name"
-                required minlength="2"
-              />
+                  type="text"
+                  class="footer__input footer__placeholder"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
               </div>
-              
-              <div class="footer__input-line">
+
+              <div class="footer__form-line">
                 <input
-                type="tel"
-                class="footer__input footer__placeholder phone"
-                placeholder="Phone Number*"
-                name="phone"
-                required minlength="18"
-              />
+                  type="tel"
+                  class="footer__input footer__placeholder phone"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  minlength="18"
+                />
               </div>
-              
+
               <textarea
-              type="text"
                 cols="30"
                 rows="10"
                 class="message footer__message footer__placeholder"
                 placeholder="Message"
                 name="message"
               ></textarea>
-              <button type="submit" class="button footer__button">Send</button>
+              <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
@@ -980,51 +990,52 @@
 
     <div class="modal">
       <div class="modal__overlay"></div>
-      <!-- /.modal__overlay -->
       <div class="modal__dialog">
-        <a href="#" class="modal__close">
-          <img src="images/close.svg" alt="icon: close" />
-        </a>
-        <h3 class="modal__title modal__title--mb-3">Booking</h3>
+        <a href="#" class="modal__close"
+          ><img
+            src="images/close.svg"
+            alt="icon: close"
+            class="modal__close-img"
+        /></a>
+        <h2 class="modal__title">Booking</h2>
         <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="modal__input modal__placeholder"
             placeholder="Your Full Name*"
             name="name"
-            required minlength="2"
+            required
+            minlength="2"
           />
           <input
             type="tel"
             class="modal__input modal__placeholder phone"
             placeholder="Phone Number*"
             name="phone"
-            required minlength="18"
+            required
+            minlength="18"
           />
           <input
             type="email"
-            class="modal__input"
-            placeholder="Your email address"
+            class="modal__input modal__placeholder"
+            placeholder="Email*"
             name="email"
             required
           />
           <textarea
-            type="text"
             cols="30"
             rows="10"
-            class="message modal__message modal__placeholder"
+            class="modal__textarea modal__placeholder"
             placeholder="Message"
             name="message"
           ></textarea>
-          <div class="modal__wrap">
-            <button type="submit" class="button modal__button">Send</button>
+          <div class="modal__button-block">
+            <button class="button modal__button">Send</button>
             <span class="modal__info">* Required Fields</span>
           </div>
         </form>
       </div>
-      <!-- /.modal_dialog -->
     </div>
-    <!-- /.modal -->
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
