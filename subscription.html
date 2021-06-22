@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
@@ -140,15 +143,16 @@
     <!-- /.breadcrumb -->
 
     <section class="main">
-      <div class="container">         
-        <div class="main-wrapper">           
+      <div class="container">
+        <div class="main-wrapper">
           <h1 class="main__title">Thanks for subscribing!</h1>
-        </div> <!-- /.hotel-wrapper -->           
-        <a href="index.html" class="main__link">Back to home</a>  
-  
-      </div> <!-- /.container -->
-    </section> <!-- /.hotel -->
-
+        </div>
+        <!-- /.hotel-wrapper -->
+        <a href="index.html" class="main__link">Back to home</a>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.hotel -->
 
     <footer class="footer">
       <div class="container">
@@ -325,26 +329,28 @@
             <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-line">
                 <input
-                type="text"
-                class="footer__input footer__placeholder"
-                placeholder="Your Full Name*"
-                name="name"
-                required minlength="2"
-              />
+                  type="text"
+                  class="footer__input footer__placeholder"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
               </div>
-              
+
               <div class="footer__input-line">
                 <input
-                type="tel"
-                class="footer__input footer__placeholder telphone"
-                placeholder="Phone Number*"
-                name="phone"
-                required minlength="18"
-              />
+                  type="tel"
+                  class="footer__input footer__placeholder telphone"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                  minlength="18"
+                />
               </div>
-              
+
               <textarea
-              type="text"
+                type="text"
                 cols="30"
                 rows="10"
                 class="message footer__message footer__placeholder"

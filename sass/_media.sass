@@ -43,6 +43,7 @@
       &__link
         font-size: 12px
         line-height: 15px
+
   .search
     &__input
       width: 340px
@@ -141,6 +142,18 @@
   .modal
     &__dialog
       padding: 30px 50px
+
+a
+  &:hover
+    color: $primary
+    text-shadow: none
+    transition: all 0.5s ease
+
+button
+  &:hover
+    background-color: darken(#06799F, 12%)
+    box-shadow: none
+    transition: 200ms
 @media (max-width: 767px)
   .container
     max-width: 576px

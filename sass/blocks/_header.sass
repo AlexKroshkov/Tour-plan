@@ -60,6 +60,8 @@
     border: none
     background-color: $primary
     cursor: pointer
+    &:hover
+      background-color: darken(#06799F, 12%)
 
 .user
   display: flex
@@ -75,4 +77,6 @@
     font-size: 14px
     line-height: 18px
     color: $text-color
-
+    transition: all 0.5s ease
+    &:hover
+      color: $primary
