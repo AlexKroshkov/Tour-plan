@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
@@ -148,7 +146,7 @@
           <h1 class="main__title">Thanks for subscribing!</h1>
         </div>
         <!-- /.hotel-wrapper -->
-        <a href="index.html" class="main__link">Back to home</a>
+        <a href="index.html" class="main__link main__link-button">Back to home</a>
       </div>
       <!-- /.container -->
     </section>
@@ -227,19 +225,19 @@
               <a
                 href="https://www.facebook.com/TourRadar/?eid=ARDM8IMGp51gdGJGLFdIlrWFpDI1Z8h0rIuro3GTFvLVHsa4AkXYx1l6PCkiOtQjO5wnpBajxbczpyUx"
                 target="_blank"
-                class="footer__link"
+                class="footer__link footer__link-soc"
                 ><img src="images/fb.svg" alt="icon: facebook"
               /></a>
               <a
                 href="https://www.youtube.com/watch?v=Tlt-GF3SVsw&ab_channel=Homedit"
                 target="_blank"
-                class="footer__link"
+                class="footer__link footer__link-soc"
                 ><img src="images/yt.svg" alt="icon: youtube"
               /></a>
               <a
                 href="https://www.instagram.com/bestattraveluk/"
                 target="_blank"
-                class="footer__link"
+                class="footer__link footer__link-soc"
                 ><img src="images/inst.svg" alt="icon: instagram"
               /></a>
             </div>
@@ -292,15 +290,15 @@
                 </div>
                 <div class="footer__link-wrapper">
                   Tel (business hours) :
-                  <a href="callto:269-1500" class="footer__tel-link">269 1500</a
+                  <a href="callto:269-1500" class="footer__tel-link footer__tel-link--nowrap">269&nbsp1500</a
                   ><br />
                   Tel (hotline) Monday - Saturday:
-                  <a href="callto:52-56-61-38" class="footer__tel-link"
+                  <a href="callto:52-56-61-38" class="footer__tel-link footer__tel-link--nowrap"
                     >52-56-61-38</a
                   >
                   (08:00 am – 20:00 pm)<br />
                   Tel (hotline) Sunday:
-                  <a href="callto:52-56-61-38" class="footer__tel-link"
+                  <a href="callto:52-56-61-38" class="footer__tel-link footer__tel-link--nowrap"
                     >52-56-61-38</a
                   >
                   (08:00 am – 14:00 pm)
@@ -327,7 +325,7 @@
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a massage</h3>
             <form action="send.php" method="POST" class="footer__form form">
-              <div class="footer__input-line">
+              <div class="footer__form-line">
                 <input
                   type="text"
                   class="footer__input footer__placeholder"
@@ -338,10 +336,10 @@
                 />
               </div>
 
-              <div class="footer__input-line">
+              <div class="footer__form-line">
                 <input
                   type="tel"
-                  class="footer__input footer__placeholder telphone"
+                  class="footer__input footer__placeholder phone"
                   placeholder="Phone Number*"
                   name="phone"
                   required
@@ -350,14 +348,13 @@
               </div>
 
               <textarea
-                type="text"
                 cols="30"
                 rows="10"
                 class="message footer__message footer__placeholder"
                 placeholder="Message"
                 name="message"
               ></textarea>
-              <button type="submit" class="button footer__button">Send</button>
+              <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>

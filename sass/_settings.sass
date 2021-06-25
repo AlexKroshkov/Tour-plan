@@ -27,6 +27,19 @@ input
   color: $primary
   flex-basis: 100%
 
+textarea:focus,
+input:focus
+  outline: none
+
+label
+  &.invalid
+    position: absolute
+    left: 0
+    bottom: -14px
+    font-size: 11px
+    line-height: 15px
+    margin-left: 5px
+
 .message
   height: 123px
   background-color: #fff

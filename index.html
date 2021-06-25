@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
@@ -342,7 +340,7 @@
               <!-- /.packages-card-open__line -->
               <span class="packages-card-open__crossed-price">$ 10,500</span>
               <span class="packages-card-open__price">$ 8,500</span>
-              <button class="button packages-card-open__button">
+              <button data-toggle="modal" class="button packages-card-open__button">
                 Book Now
               </button>
             </div>
@@ -394,7 +392,7 @@
               <!-- /.packages-card-closed__line -->
               <span class="packages-card-closed__crossed-price">$ 8,500</span>
               <span class="packages-card-closed__price">$ 3,000</span>
-              <button class="button packages-card-closed__button">
+              <button data-toggle="modal" class="button packages-card-closed__button">
                 Book Now
               </button>
             </div>
@@ -445,7 +443,7 @@
               <!-- /.packages-card-closed__line -->
               <span class="packages-card-closed__crossed-price">$ 10,500</span>
               <span class="packages-card-closed__price">$ 9,500</span>
-              <button class="button packages-card-closed__button">
+              <button data-toggle="modal" class="button packages-card-closed__button">
                 Book Now
               </button>
             </div>
@@ -496,7 +494,7 @@
               <!-- /.packages-card-closed__line -->
               <span class="packages-card-closed__crossed-price">$ 4,500</span>
               <span class="packages-card-closed__price">$ 2,500</span>
-              <button class="button packages-card-closed__button">
+              <button data-toggle="modal" class="button packages-card-closed__button">
                 Book Now
               </button>
             </div>
@@ -547,7 +545,7 @@
               <!-- /.packages-card-closed__line -->
               <span class="packages-card-closed__crossed-price">$ 6,500</span>
               <span class="packages-card-closed__price">$ 3,500</span>
-              <button class="button packages-card-closed__button">
+              <button data-toggle="modal" class="button packages-card-closed__button">
                 Book Now
               </button>
             </div>
@@ -587,7 +585,7 @@
             />
           </div>
           <div class="subscribe__wrapper-button">
-            <button class="subscribe__button">Send</button>
+            <button class="subscribe__button subscribe__button-hover">Send</button>
           </div>
         </form>
       </div>
@@ -720,7 +718,7 @@
               class="card__image"
             />
             <h3 class="card__title">The curious corner<br />of chamarel</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
 
           <div
@@ -733,7 +731,7 @@
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf<br />course</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
 
           <div class="card activities__card" data-aos="flip-left">
@@ -745,7 +743,7 @@
             <h3 class="card__title">
               Tamarind falls hiking<br />trip - full day
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
 
           <div
@@ -758,7 +756,7 @@
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery<br />quest</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
         </div>
         <!-- /.activities-wrapper -->
@@ -840,19 +838,19 @@
               <a
                 href="https://www.facebook.com/TourRadar/?eid=ARDM8IMGp51gdGJGLFdIlrWFpDI1Z8h0rIuro3GTFvLVHsa4AkXYx1l6PCkiOtQjO5wnpBajxbczpyUx"
                 target="_blank"
-                class="footer__link"
+                class="footer__link footer__link-social"
                 ><img src="images/fb.svg" alt="icon: facebook"
               /></a>
               <a
                 href="https://www.youtube.com/watch?v=Tlt-GF3SVsw&ab_channel=Homedit"
                 target="_blank"
-                class="footer__link"
+                class="footer__link footer__link-social"
                 ><img src="images/yt.svg" alt="icon: youtube"
               /></a>
               <a
                 href="https://www.instagram.com/bestattraveluk/"
                 target="_blank"
-                class="footer__link"
+                class="footer__link footer__link-social"
                 ><img src="images/inst.svg" alt="icon: instagram"
               /></a>
             </div>
@@ -905,15 +903,15 @@
                 </div>
                 <div class="footer__link-wrapper">
                   Tel (business hours) :
-                  <a href="callto:269-1500" class="footer__tel-link">269 1500</a
+                  <a href="callto:269-1500" class="footer__tel-link footer__tel-link--nowrap">269&nbsp;1500</a
                   ><br />
                   Tel (hotline) Monday - Saturday:
-                  <a href="callto:52-56-61-38" class="footer__tel-link"
+                  <a href="callto:52-56-61-38" class="footer__tel-link footer__tel-link--nowrap"
                     >52-56-61-38</a
                   >
                   (08:00 am – 20:00 pm)<br />
                   Tel (hotline) Sunday:
-                  <a href="callto:52-56-61-38" class="footer__tel-link"
+                  <a href="callto:52-56-61-38" class="footer__tel-link footer__tel-link--nowrap"
                     >52-56-61-38</a
                   >
                   (08:00 am – 14:00 pm)
@@ -1003,7 +1001,8 @@
         /></a>
         <h2 class="modal__title">Booking</h2>
         <form action="send.php" method="POST" class="modal__form form">
-          <input
+          <div class="modal__form-input">
+            <input
             type="text"
             class="modal__input modal__placeholder"
             placeholder="Your Full Name*"
@@ -1011,7 +1010,9 @@
             required
             minlength="2"
           />
-          <input
+          </div>
+          <div class="modal__form-input">
+            <input
             type="tel"
             class="modal__input modal__placeholder phone"
             placeholder="Phone Number*"
@@ -1019,13 +1020,17 @@
             required
             minlength="18"
           />
-          <input
+          </div>
+          <div class="modal__form-input">
+            <input
             type="email"
             class="modal__input modal__placeholder"
             placeholder="Email*"
             name="email"
             required
           />
+          </div>
+          
           <textarea
             cols="30"
             rows="10"
@@ -1046,6 +1051,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/activ-card.js"></script>
